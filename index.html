@@ -43,6 +43,7 @@ body {
   margin: 0 auto;
   padding: 40px 24px;
   min-height: 100vh;
+  background: #ffffff;
 }
 
 .lang {
@@ -123,7 +124,7 @@ body {
   width: 70px;
 }
 
-/* === Other Pages === */
+/* === Header === */
 .header {
   display: flex;
   justify-content: space-between;
@@ -132,10 +133,12 @@ body {
   border-bottom: 1px solid #e6e6e6;
 }
 .header-logo {
-  font-size: 24px;
-  font-weight: 600;
+  font-family: 'Segoe Script', 'Brush Script MT', cursive;
+  font-size: 28px;
+  color: #000000;
 }
 
+/* === Disabled Page === */
 .content {
   padding-top: 20px;
 }
@@ -145,6 +148,7 @@ h1 {
   font-weight: 600;
   text-align: center;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .username-display {
@@ -172,6 +176,7 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   margin: 30px 0 12px;
+  color: #000;
 }
 
 p {
@@ -272,10 +277,10 @@ p {
   color: #333;
 }
 
-/* === Appeal Submitted === */
+/* === Appeal Submitted Page === */
 .clock-icon {
   text-align: center;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 .clock-icon svg {
   width: 80px;
@@ -283,18 +288,18 @@ p {
 }
 
 .appeal-title {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 20px;
-  line-height: 1.4;
+  color: #000;
+  margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .text-block {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 12px;
-  color: #444;
+  margin-bottom: 16px;
+  color: #333;
 }
 .text-block.secondary {
   color: #888;
@@ -303,11 +308,12 @@ p {
 .agent-note {
   background: #f0f7ff;
   color: #0066cc;
-  padding: 12px 16px;
+  padding: 14px 18px;
   border-radius: 8px;
-  text-align: center;
-  margin: 20px 0;
+  margin: 24px 0;
   font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 </style>
 </head>
@@ -389,25 +395,33 @@ p {
   </div>
   <div class="content">
     <div class="clock-icon">
-      <svg viewBox="0 0 100 100" fill="none">
-        <circle cx="50" cy="50" r="35" stroke="#000" stroke-width="2" fill="none"/>
-        <circle cx="50" cy="50" r="3" fill="#000"/>
-        <line x1="50" y1="50" x2="50" y2="32" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
-        <line x1="50" y1="50" x2="66" y2="44" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="35" stroke="#000000" stroke-width="2" fill="none"/>
+        <circle cx="50" cy="50" r="3" fill="#000000"/>
+        <line x1="50" y1="50" x2="50" y2="32" stroke="#000000" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="50" y1="50" x2="66" y2="44" stroke="#000000" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="50" y1="15" x2="50" y2="22" stroke="#833AB4" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="75" y1="25" x2="69" y2="30" stroke="#C13584" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="85" y1="50" x2="78" y2="50" stroke="#E1306C" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="75" y1="75" x2="69" y2="70" stroke="#FD1D1D" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="50" y1="85" x2="50" y2="78" stroke="#FCAF45" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="25" y1="75" x2="31" y2="70" stroke="#F58529" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="15" y1="50" x2="22" y2="50" stroke="#405DE6" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="25" y1="25" x2="31" y2="30" stroke="#5851DB" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
     
     <h2 class="appeal-title">You submitted an appeal on<br><span id="appeal-datetime"></span></h2>
     
-    <p class="text-block">It usually takes about 24 hours to review your information. Please check back later.</p>
-    <p class="text-block secondary">Your account is currently not visible to others.</p>
+    <p class="text-block">It usually takes us just over a day to review your information. Check back here.</p>
+    <p class="text-block secondary">Your account is not visible to people on Instagram, and you can't use it.</p>
     
-    <div class="agent-note">Reviewed by Rex Hernandez — Meta Services Agent</div>
+    <div class="agent-note">Currently being reviewed by Meta Agent Rex Hernandez — Your submitted appeal and verification is in progress.</div>
     
     <h2>What happens next?</h2>
-    <p class="text-block">We'll review the information you submitted.</p>
-    <p class="text-block">If we find your account follows our standards, you'll be able to use Instagram again soon.</p>
-    <p class="text-block">If not, your account will be permanently disabled and you won't be able to appeal again.</p>
+    <p class="text-block">We'll take another look at your account.</p>
+    <p class="text-block">If we find your account does follow our Community Standards, you'll be able to use Instagram again.</p>
+    <p class="text-block">If we find your account doesn't follow our Community Standards, it will be permanently disabled and you won't be able to appeal again.</p>
   </div>
 </div>
 
@@ -482,12 +496,7 @@ function formatDate(date) {
   const d = date.getDate();
   const m = months[date.getMonth()];
   const y = date.getFullYear();
-  let h = date.getHours();
-  const ampm = h >= 12 ? 'PM' : 'AM';
-  h = h % 12;
-  h = h ? h : 12;
-  const min = String(date.getMinutes()).padStart(2, '0');
-  return `${m} ${d}, ${y} at ${h}:${min} ${ampm}`;
+  return `${m} ${d}, ${y}`;
 }
 
 function verifyFace() {
